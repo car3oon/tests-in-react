@@ -1,18 +1,8 @@
 import React from 'react';
 
-const buttonStyles = {
-  border: '1px solid red',
-  borderRadius: 3,
-  backgroundColor: '#FFFFFF',
-  cursor: 'pointer',
-  fontSize: 15,
-  padding: '3px 10px',
-  margin: 10,
-};
-
 const Button = ({ children, onClick }) => (
   <button
-    style={buttonStyles}
+    className="button"
     onClick={onClick}
   >
     {children}
