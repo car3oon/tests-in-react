@@ -8,6 +8,10 @@ export function sum(x, y) {
   return x + y;
 }
 
+export function getListIds(list) {
+  return Object.keys(list);
+}
+
 class App extends Component {
   render() {
     return (
