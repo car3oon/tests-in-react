@@ -12,6 +12,15 @@ export function getListIds(list) {
   return Object.keys(list);
 }
 
+export function getNumberOfItems(list) {
+  let itemsList = getListIds(list);
+  return itemsList.length;
+}
+
+export function isEmptyList(list) {
+  return (getNumberOfItems(list) === 0)
+}
+
 class App extends Component {
   render() {
     return (
