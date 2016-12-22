@@ -38,7 +38,9 @@ describe('App tests', () =>  {
   it('check if list is empty', () => {
     var checkIfEmptyList = isEmptyList(listMock);
 
-    expect(checkIfEmptyList).toEqual(false)
+    expect(checkIfEmptyList).toBeDefined();
+    expect(checkIfEmptyList).toBe(false);
+    expect(checkIfEmptyList).not.toBe(true);
   });
 
   it('sums numbers', () => {
