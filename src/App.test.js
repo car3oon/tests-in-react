@@ -32,7 +32,7 @@ describe('App tests', () =>  {
     var expectedListItemsCount = Object.keys(listMock).length;
     var actualListItemsCount = getNumberOfItems(listMock);
 
-    expect(actualListItemsCount).toEqual(expectedListItemsCount);
+    expect(actualListItemsCount).toBe(expectedListItemsCount);
   });
 
   it('check if list is empty', () => {
