@@ -1,13 +1,25 @@
 {
   "name": "my-new-app",
+  "jest": {
+    "collectCoverage": true,
+    "unmockedModulePathPatterns": [
+      "<rootDir>/node_modules/react/",
+      "<rootDir>/node_modules/enzyme/"
+    ],
+    "testPathDirs": [
+      "<rootDir>/src/"
+    ]
+  },
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "@kadira/storybook": "^2.21.0",
+    "babel-jest": "^18.0.0",
     "enzyme": "^2.6.0",
     "flow-bin": "^0.37.1",
+    "jest": "^18.0.0",
     "react-addons-test-utils": "^15.4.1",
-    "react-scripts": "0.8.4",
-    "@kadira/storybook": "^2.21.0"
+    "react-scripts": "0.8.4"
   },
   "dependencies": {
     "react": "^15.4.1",
